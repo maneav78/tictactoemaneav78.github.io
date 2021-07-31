@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(167, 110, 90);
+}
+h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0;
+}
+.box{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+.row{
+    height: 200px;
+    border-top: 2px solid white;
+    display: flex;
+}  
+.low{
+    margin-top: -1.5px;
+}
+.high{
+    border-top: none;
+}
+.block{
+    width: 200px;
+    border: 2px solid white;
+}
