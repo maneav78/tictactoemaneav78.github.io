@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 body{
     background-color: rgb(167, 110, 90);
 }
@@ -26,4 +27,13 @@ h1{
 .block{
     width: 200px;
     border: 2px solid white;
+    text-align: center;
+}
+#step{
+    font-size: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px;  
+    color: rgb(255, 255, 255);
+    font-family: 'Gowun Dodum', sans-serif;
 }
