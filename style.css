@@ -37,3 +37,22 @@ p{
     color: rgb(255, 255, 255);
     font-family: 'Gowun Dodum', sans-serif;
 }
+#card{
+    border: 2px solid rgb(255, 255, 255);
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    margin-top: -30%;
+    background-color: rgb(199, 171, 134);
+    border-radius: 50px;
+    box-shadow: -5px 5px 20px 0px rgb(114, 109, 109);
+    display: none;
+}
+
+#meseege{
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+}

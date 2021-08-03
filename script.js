@@ -3,6 +3,7 @@
 let count = 1;
 let blocks = [];
 var checkarr;
+const card = document.getElementById("card");
 
 for (let i = 1; i <= 9; i++) {
   blocks[i] = document.getElementById(i);
@@ -43,52 +44,70 @@ function whoWinner() {
     blocks[1].innerHTML == blocks[2].innerHTML &&
     blocks[1].innerHTML == blocks[3].innerHTML
   ) {
-    alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[4].innerHTML == blocks[5].innerHTML &&
     blocks[4].innerHTML == blocks[6].innerHTML
   ) {
-    alert(`Winner is ${blocks[4].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[4].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[7].innerHTML == blocks[8].innerHTML &&
     blocks[7].innerHTML == blocks[9].innerHTML
   ) {
-    alert(`Winner is ${blocks[7].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[7].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[1].innerHTML == blocks[5].innerHTML &&
     blocks[1].innerHTML == blocks[9].innerHTML
   ) {
-    alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[3].innerHTML == blocks[5].innerHTML &&
     blocks[3].innerHTML == blocks[7].innerHTML
   ) {
-    alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[1].innerHTML == blocks[4].innerHTML &&
     blocks[1].innerHTML == blocks[7].innerHTML
   ) {
-    alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[2].innerHTML == blocks[5].innerHTML &&
     blocks[2].innerHTML == blocks[8].innerHTML
   ) {
-    alert(`Winner is ${blocks[2].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[2].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else if (
     blocks[3].innerHTML == blocks[6].innerHTML &&
     blocks[3].innerHTML == blocks[9].innerHTML
   ) {
-    alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    // alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   } else {
-    alert("Nobody won");
+    // alert("Nobody won");
+    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.style.display = "block";
     reset();
   }
 }
@@ -96,7 +115,7 @@ function whoWinner() {
 function reset() {
   setTimeout(() => {blocks.forEach(function (block) {
     block.innerHTML = "";
+    card.style.display = 'none';
   });
-  count = 1}, 1000);
-  
+  count = 1}, 3000);
 }
