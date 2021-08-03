@@ -44,42 +44,59 @@ function whoWinner() {
     blocks[1].innerHTML == blocks[3].innerHTML
   ) {
     alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[4].innerHTML == blocks[5].innerHTML &&
     blocks[4].innerHTML == blocks[6].innerHTML
   ) {
     alert(`Winner is ${blocks[4].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[7].innerHTML == blocks[8].innerHTML &&
     blocks[7].innerHTML == blocks[9].innerHTML
   ) {
     alert(`Winner is ${blocks[7].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[1].innerHTML == blocks[5].innerHTML &&
     blocks[1].innerHTML == blocks[9].innerHTML
   ) {
     alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[3].innerHTML == blocks[5].innerHTML &&
     blocks[3].innerHTML == blocks[7].innerHTML
   ) {
     alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[1].innerHTML == blocks[4].innerHTML &&
     blocks[1].innerHTML == blocks[7].innerHTML
   ) {
     alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[2].innerHTML == blocks[5].innerHTML &&
     blocks[2].innerHTML == blocks[8].innerHTML
   ) {
     alert(`Winner is ${blocks[2].innerHTML.charAt(3)}`);
+    reset();
   } else if (
     blocks[3].innerHTML == blocks[6].innerHTML &&
     blocks[3].innerHTML == blocks[9].innerHTML
   ) {
     alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
+    reset();
   } else {
     alert("Nobody won");
+    reset();
   }
+}
+
+function reset() {
+  setTimeout(() => {blocks.forEach(function (block) {
+    block.innerHTML = "";
+  });
+  count = 1}, 1000);
+  
 }
