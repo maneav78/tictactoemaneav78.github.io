@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 body{
     background-color: rgb(167, 110, 90);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 h1{
     color: white;
@@ -61,7 +59,19 @@ p{
 }
 
 /* -----------------Main Manu----------------------- */
-
+.manu{
+    background-image: url(/img/gameBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titlebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 100%; 
+}
 ul {
     position: relative;
     display: flex;
@@ -84,11 +94,11 @@ ul {
     z-index: 100;
   }
 
-  div {
+  .letters {
     position: relative;
     height: 80px;
     width: 80px;
-    background: #6d6d85;
+    background: #001737;
     color: #555;
     display: flex;
     display: flex;
@@ -120,4 +130,24 @@ ul {
     100% {
       filter: hue-rotate(360deg);
     }
+  }
+
+  /* ------------------gamemodes----------------- */
+
+  .gamemode{
+      width: 45%;
+      margin: auto;
+      margin-top: 300px;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  button{
+      height: 80px;
+      width: 300px;
+      background-color: #001737;
+      color: #555;
+      font-weight: bold;
+      border-radius: 20px;
+      font-size: 30px;
   }
