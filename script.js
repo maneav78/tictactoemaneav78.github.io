@@ -47,7 +47,6 @@ function whoWinner() {
     blocks[1].innerHTML == blocks[2].innerHTML &&
     blocks[1].innerHTML == blocks[3].innerHTML
   ) {
-    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -55,7 +54,6 @@ function whoWinner() {
     blocks[4].innerHTML == blocks[5].innerHTML &&
     blocks[4].innerHTML == blocks[6].innerHTML
   ) {
-    // alert(`Winner is ${blocks[4].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -63,7 +61,6 @@ function whoWinner() {
     blocks[7].innerHTML == blocks[8].innerHTML &&
     blocks[7].innerHTML == blocks[9].innerHTML
   ) {
-    // alert(`Winner is ${blocks[7].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -71,7 +68,6 @@ function whoWinner() {
     blocks[1].innerHTML == blocks[5].innerHTML &&
     blocks[1].innerHTML == blocks[9].innerHTML
   ) {
-    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -79,7 +75,6 @@ function whoWinner() {
     blocks[3].innerHTML == blocks[5].innerHTML &&
     blocks[3].innerHTML == blocks[7].innerHTML
   ) {
-    // alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -87,7 +82,6 @@ function whoWinner() {
     blocks[1].innerHTML == blocks[4].innerHTML &&
     blocks[1].innerHTML == blocks[7].innerHTML
   ) {
-    // alert(`Winner is ${blocks[1].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -95,7 +89,6 @@ function whoWinner() {
     blocks[2].innerHTML == blocks[5].innerHTML &&
     blocks[2].innerHTML == blocks[8].innerHTML
   ) {
-    // alert(`Winner is ${blocks[2].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
@@ -103,13 +96,11 @@ function whoWinner() {
     blocks[3].innerHTML == blocks[6].innerHTML &&
     blocks[3].innerHTML == blocks[9].innerHTML
   ) {
-    // alert(`Winner is ${blocks[3].innerHTML.charAt(3)}`);
     card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
     card.style.display = "block";
     reset();
   } else {
-    // alert("Nobody won");
-    card.innerHTML = `<p id="meseege">Winner is ${blocks[1].innerHTML.charAt(3)}</p>`;
+    card.innerHTML = `<p id="meseege">Nobody Won</p>`;
     card.style.display = "block";
     reset();
   }
