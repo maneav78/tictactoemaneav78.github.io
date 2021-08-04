@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 body{
-    background-color: rgb(167, 110, 90);
-    
+    /* background-color: #182f4d; */
+    margin-top: 0;
+    background-image: url(/img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 h1{
     color: white;
@@ -13,6 +16,7 @@ h1{
     width: 600px;
     height: 600px;
     margin: auto;
+    
 }
 .row{
     height: 200px;
@@ -39,15 +43,15 @@ p{
     font-family: 'Gowun Dodum', sans-serif;
 }
 #card{
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(95, 94, 94);
     width: 30%;
     height: 200px;
     margin: auto;
     position: relative;
     margin-top: -30%;
-    background-color: rgb(199, 171, 134);
+    background-color: #001737;
     border-radius: 50px;
-    box-shadow: -5px 5px 20px 0px rgb(114, 109, 109);
+    box-shadow: -5px 5px 20px 0px rgb(19, 18, 18);
     display: none;
 }
 
@@ -56,6 +60,7 @@ p{
     text-align: center;
     vertical-align: middle;
     line-height: 100px; 
+    color: #555;
 }
 
 /* -----------------Main Manu----------------------- */
@@ -151,3 +156,11 @@ ul {
       border-radius: 20px;
       font-size: 30px;
   }
+  button:hover{
+      cursor: pointer;
+  }
+
+
+.ingame{
+    margin-top: 0;
+}

@@ -4,6 +4,9 @@ let count = 1;
 let blocks = [];
 var checkarr;
 const card = document.getElementById("card");
+const _2playerbtn = document.getElementById("_2player");
+const _withCompbtn = document.getElementById("_withComp");
+
 
 for (let i = 1; i <= 9; i++) {
   blocks[i] = document.getElementById(i);
