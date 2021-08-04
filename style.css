@@ -16,7 +16,8 @@ h1{
     width: 600px;
     height: 600px;
     margin: auto;
-    
+    border: 2PX solid white;
+    border-radius: 10px;
 }
 .row{
     height: 200px;
@@ -31,8 +32,25 @@ h1{
 }
 .block{
     width: 200px;
-    border: 2px solid white;
     text-align: center;
+}
+.ul{
+ border-right: 2px solid white;
+}
+.ur{
+ border-left: 2px solid white;
+}
+.ml{
+ border-right: 2px solid white;
+}
+.mr{
+ border-left: 2px solid white;
+}
+.dl{
+ border-right: 2px solid white;
+}
+.dr{
+ border-left: 2px solid white;
 }
 p{
     font-size: 100px;
